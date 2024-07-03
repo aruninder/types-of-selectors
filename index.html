@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selectors Example</title>
+<style>
+  /* Universal selector */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Type selector */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+
+  /* Class selector */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* ID selector */
+  #header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Attribute selector */
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  /* Pseudo-class selector */
+  a:hover {
+    color: #f00;
+  }
+
+  /* Pseudo-element selector */
+  p::first-line {
+    font-weight: bold;
+  }
+
+  /* Descendant selector */
+  .menu li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  /* Child selector */
+  ul > li {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
+  /* Adjacent sibling selector */
+  h2 + p {
+    margin-top: 0;
+  }
+
+  /* General sibling selector */
+  h2 ~ p {
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header id="header">
+      <h1>Selectors Example</h1>
+    </header>
+    <section>
+      <h2>Form Example</h2>
+      <form>
+        <input type="text" placeholder="Enter your name">
+        <input type="text" placeholder="Enter your email">
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section>
+      <h2>Links Example</h2>
+      <p>Visit our <a href="#">homepage</a> for more information.</p>
+    </section>
+    <section>
+      <h2>List Example</h2>
+      <ul class="menu">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Text Example</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui consectetur, id rhoncus tortor sagittis.</p>
+      <p>Pellentesque sit amet gravida felis. Aliquam erat volutpat.</p>
+    </section>
+  </div>
+</body>
+</html>
